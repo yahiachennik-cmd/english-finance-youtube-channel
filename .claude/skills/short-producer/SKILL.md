@@ -32,11 +32,41 @@ File: `research/<person-slug>/dossier.md`. If it exists, read it and extend it; 
 Choose the strongest idea not yet produced (check `video/projects/`). Prefer: a shocking number in the
 first 2 seconds, a clear mechanism, a lesson a normal viewer can apply this week.
 
+## Writing style (owner's rules — always apply)
+**Voice:** casual, punchy **American English** — how a top US money/business Shorts creator talks to a
+friend. Easy for UK/AU viewers too, so avoid heavy slang and US-only references that need explaining.
+Not formal, not corporate, not "In this video we will...". Contractions always (it's, he'd, that's).
+Short sentences. Concrete numbers. You-focused ("you", "your paycheck").
+Fine: "here's the catch", "guess what", "that's insane", "think about that", "grew like crazy".
+Avoid: "utilize", "moreover", "in conclusion", "delve", "it is important to note", clickbait lies.
+
+**Hook (first 1–2 s, ≤ 10 words) — must be very strong.** Pick one pattern and make it specific:
+- Shocking number: "Tesla paid Elon Musk a salary of... zero dollars."
+- Contradiction: "Warren Buffett's biggest mistake made him billions."
+- Direct question at the viewer: "Would you work for $0 a year?"
+- Secret / behind the scenes: "This one clause made Bezos richer than his salary ever could."
+- Stakes: "In 2008, Elon Musk was weeks away from losing everything."
+The hook must be true and sourced (or a question). Never start with the person's name + biography.
+
+**Retention (keep them watching to the end):**
+- Open a loop early and close it late: "So how did he actually get paid? Here's the catch."
+- Re-hook every 5–8 s with a turn: "But here's the thing...", "Guess what?", "And it gets crazier."
+- Every line must earn the next one; cut any sentence that doesn't add a number, a turn or the lesson.
+- Payoff = the lesson, stated simply, applicable to a normal person this week.
+
+**Ending — fixed structure for every video:**
+1. **Engagement question (CTA 1, comments)** tied to this video's lesson — a yes/no or "which one"
+   question people can answer in 2 words: "Would you take $0 salary for a bigger slice? Tell me below."
+2. **Share prompt (CTA 2)**: "Send this to a friend who [specific situation]." (vary the situation)
+3. Outro scene: "Follow for more billionaire money lessons." (`{"type": "outro"}`)
+CTA 1 + 2 use the `cta` visual (comment + share icons). Keep the whole ending ≤ 6 s.
+CTA scenes are `"opinion": true` (no source needed).
+
 ## Step 3 — Script (`video/projects/<id>/script.json`)
 - `<id>` = `<person>-<angle>` in kebab-case, e.g. `buffett-first-stock`.
-- 20–45 s → **60–110 spoken words**. 7–12 scenes. One sentence ≤ 8 words per scene.
-- Shape: **Hook** (number or question) → **mechanism** → **proof** (sourced number/date) →
-  **lesson** (`"opinion": true`) → **outro** (`{"type":"outro"}`, "Follow for more billionaire money lessons.").
+- 25–50 s → **75–125 spoken words** (incl. ~20 words of CTA). 9–14 scenes. One sentence ≤ 8 words per scene.
+- Shape: **Hook** → **open loop** → **mechanism** → **proof** (sourced number/date) → **re-hook** →
+  **lesson** (`"opinion": true`) → **CTA comment** → **CTA share** → **outro** (see Writing style).
 - Every factual scene: `"source": ["<id>"]` pointing to `"sources": [{id, title, url}]` copied from the
   dossier. Wording must match the source exactly in meaning (options ≠ shares, revenue ≠ profit,
   net worth always with a date, "about" for rounded numbers).

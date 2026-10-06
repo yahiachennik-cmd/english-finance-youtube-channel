@@ -1,5 +1,5 @@
 {
- "title": "Elon Musk's Tesla Salary Was $0. Here's Why.",
+ "title": "Tesla Paid Elon Musk $0 in Salary. Here's the Catch.",
  "sources": [
   {
    "id": "proxy2018",
@@ -24,7 +24,10 @@
  ],
  "scenes": [
   {
-   "text": "Elon Musk's Tesla salary? *Zero dollars.*",
+   "text": "Tesla paid Elon Musk a salary of... *zero dollars.*",
+   "source": [
+    "proxy2018"
+   ],
    "visual": {
     "type": "counter",
     "from": 1000000,
@@ -34,13 +37,22 @@
     "labelIcon": "Banknote",
     "dur": 1.6,
     "burst": true
-   },
-   "source": [
-    "proxy2018"
-   ]
+   }
+  },
+  {
+   "text": "So how did he get paid? *Here's the catch.*",
+   "opinion": true,
+   "visual": {
+    "type": "icon",
+    "icon": "Search",
+    "flash": true
+   }
   },
   {
    "text": "His 2018 deal had no salary. *No cash bonus.*",
+   "source": [
+    "proxy2018"
+   ],
    "visual": {
     "type": "list",
     "items": [
@@ -57,38 +69,60 @@
       "mark": "cross"
      }
     ]
-   },
-   "source": [
-    "proxy2018"
-   ]
+   }
   },
   {
-   "text": "He was paid *only in stock options*",
+   "text": "*Nothing* guaranteed.",
+   "source": [
+    "proxy2018"
+   ],
+   "visual": "keep"
+  },
+  {
+   "text": "He only got *stock options*",
+   "source": [
+    "proxy2018"
+   ],
    "visual": {
     "type": "icon",
-    "icon": "TrendingUp",
-    "flash": true,
+    "icon": "PieChart",
     "pills": [
      {
-      "text": "Stock only",
-      "icon": "PieChart",
+      "text": "Stock options",
+      "icon": "TrendingUp",
       "at": "stock"
      }
     ]
-   },
-   "source": [
-    "proxy2018"
-   ]
+   }
   },
   {
-   "text": "and *only if* Tesla hit huge targets.",
-   "visual": "keep",
+   "text": "and they only paid off if Tesla *grew like crazy.*",
    "source": [
     "proxy2018"
-   ]
+   ],
+   "visual": "keep"
   },
   {
-   "text": "*12 targets.* From $100B to *$650B* in value.",
+   "text": "Back then, Tesla was worth about *$59 billion.*",
+   "source": [
+    "harvard2018"
+   ],
+   "visual": {
+    "type": "counter",
+    "from": 0,
+    "to": 59,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "Tesla value, Jan 2018",
+    "labelIcon": "Building2",
+    "dur": 1.1
+   }
+  },
+  {
+   "text": "12 milestones. The last one? *$650 billion.*",
+   "source": [
+    "proxy2018"
+   ],
    "visual": {
     "type": "bars",
     "bars": [
@@ -151,32 +185,31 @@
       "label": "12",
       "value": 650,
       "display": "$650B",
-      "at": "650b"
+      "at": "650"
      }
     ]
-   },
-   "source": [
-    "proxy2018"
-   ]
+   }
   },
   {
-   "text": "Back then, Tesla was worth about *$59B.*",
+   "text": "That's *11 times bigger.*",
    "source": [
+    "proxy2018",
     "harvard2018"
    ],
    "visual": {
     "type": "counter",
-    "from": 0,
-    "to": 59,
-    "prefix": "$",
-    "suffix": "B",
-    "label": "Tesla value, Jan 2018",
-    "labelIcon": "Building2",
-    "dur": 1.2
+    "from": 1,
+    "to": 11,
+    "suffix": "x",
+    "dur": 0.8,
+    "flash": true
    }
   },
   {
-   "text": "Tesla hit *every single one.*",
+   "text": "Guess what? Tesla unlocked *all 12.*",
+   "source": [
+    "10k2023"
+   ],
    "visual": {
     "type": "chart",
     "points": [
@@ -192,29 +225,25 @@
      135,
      210
     ],
-    "color": "gold",
+    "dur": 1.3,
     "yLabel": "Value",
     "xLabel": "Years",
-    "dur": 1.4,
     "markers": [
      {
       "index": 10,
       "text": "12 / 12 ✓",
-      "at": "one"
+      "at": "all"
      }
     ]
-   },
-   "source": [
-    "10k2023"
-   ]
+   }
   },
   {
-   "text": "The lesson? A salary pays you for your *time.*",
+   "text": "Here's the lesson. A paycheck pays you for your *time.*",
+   "opinion": true,
    "visual": {
     "type": "compare",
-    "flash": true,
     "left": {
-     "title": "Salary",
+     "title": "Paycheck",
      "icon": "Clock",
      "sub": "Paid for your time"
     },
@@ -222,27 +251,40 @@
      "title": "Ownership",
      "icon": "PieChart",
      "sub": "Paid for value",
-     "at": "ownership"
+     "at": "owning"
     },
     "winner": "right",
-    "winnerAt": "ownership",
+    "winnerAt": "owning",
     "loserMark": "cross"
-   },
-   "opinion": true
+   }
   },
   {
-   "text": "*Ownership* pays you for the *value you create.*",
-   "visual": "keep",
-   "opinion": true
+   "text": "*Owning* pays you for the *value you create.*",
+   "opinion": true,
+   "visual": "keep"
   },
   {
-   "text": "Stop only earning. *Start owning.*",
+   "text": "Would you take *$0 salary* for a bigger slice? *Tell me below.*",
+   "opinion": true,
    "visual": {
-    "type": "icon",
-    "icon": "Key",
-    "burst": true
-   },
-   "opinion": true
+    "type": "cta",
+    "actions": [
+     {
+      "icon": "MessageCircle",
+      "text": "Comment"
+     },
+     {
+      "icon": "Send",
+      "text": "Share",
+      "at": "send"
+     }
+    ]
+   }
+  },
+  {
+   "text": "And *send this* to a friend who thinks a paycheck is enough.",
+   "opinion": true,
+   "visual": "keep"
   },
   {
    "text": "Follow for more billionaire money lessons.",

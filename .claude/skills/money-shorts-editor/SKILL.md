@@ -22,8 +22,7 @@ channel «الأول», adapted to English and to money/billionaire topics. Refe
   buttons with ✓/✗ marks, two-card compare with a winner, person card, timeline, quote.
 - **Motion:** spring pop-ins, path drawing, count-ups, highlight-and-dim, blur-out exits, light flash
   (`flash: true`) on big beats, soft whoosh on every visual change.
-- **Script shape:** Hook (0–3 s, shocking number or question) → the money mechanism → proof (real
-  number / filing / date) → the lesson the viewer can apply → outro CTA. 20–45 s.
+- **Script shape:** see `short-producer` (hook → loop → mechanism → proof → lesson → comment CTA → share CTA → outro). 25–50 s.
 - **Outro:** brand from `video/brand.json` assembling from particles + tagline + follow button.
 
 ## Files
@@ -106,6 +105,7 @@ number with WebSearch before writing it; rephrase to exactly what the source say
 | `timeline` | `events:[{year, text, at?, color?}]` (≤ 5) |
 | `quote` | `text`, `author` (only verbatim quotes from a cited original source) |
 | `clip` | `src` (`clips/x.mp4` or `images/x.jpg` in `public/`), `credit` (required), `startFrom?`, `caption?` — licensed media only, ≤ 4 s |
+| `cta` | `actions?:[{icon, text, at?}]` (default: MessageCircle "Comment", Send "Share") — for the fixed CTA ending |
 | `outro` | — (uses brand.json) |
 
 To add a type: create `src/visuals/<Name>.tsx` (props `{v, f}`, `f` = frames since the visual
