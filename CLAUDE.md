@@ -1,30 +1,38 @@
 # Project context: English Finance YouTube Channel
 
 ## What this is
-A planning and production workspace for a new YouTube channel in the **personal finance** niche.
-No app code — the repo holds strategy docs, video scripts, research, and product drafts.
+Workspace for a **faceless, AI-assisted** YouTube channel in **business & money**.
+Holds strategy docs, video scripts, and the project's video-editing skill.
 
-## Goals (monetization)
-1. **AdSense** (YouTube Partner Program) — finance is a high-CPM niche.
-2. **Affiliate marketing** — links in descriptions / pinned comments.
-3. **Digital products** — templates, spreadsheets, guides sold to viewers.
+## Audience & monetization
+- English speakers in the **US, UK, Australia** (Tier-1 ad markets).
+- Revenue: AdSense (YPP), affiliates, digital products.
 
-## Audience
-English speakers in **United States, United Kingdom, Australia** (Tier-1 ad markets).
-- Write in clear, natural English. Use US spelling by default unless a piece targets UK/AU.
-- When a topic is country-specific (taxes, retirement accounts, credit), say which country
-  it applies to, or cover US / UK / AU equivalents (401k/IRA vs ISA/SIPP vs Super).
+## Niche & angle
+How billionaires and top business people **think about and make money**
+(Elon Musk, Warren Buffett, Charlie Munger, Jeff Bezos, ...).
+- **Rule:** never a biography. Every video answers *how they think about money / how they
+  made it* and ends with a lesson the viewer can apply. The money angle drives CPM.
 
-## Working conventions
-- The owner communicates in Algerian Arabic (Darija); reply in Arabic. Channel content
-  (scripts, titles, descriptions, products) is always in English.
-- Every finance video/description needs a "general information, not financial advice" disclaimer.
-- Every affiliate link needs a clear disclosure (FTC in US, ASA/CAP in UK, ACCC/ASIC in AU).
-- Avoid mass-produced / templated AI content — YouTube's "inauthentic content" policy can
-  block monetization. Each video needs original angle, research, and value.
+## Format (current phase)
+- **Shorts only** at first: 15–60 s, vertical 9:16 (1080x1920).
+- YPP via Shorts: 1,000 subs + 10M Shorts views in 90 days. Shorts RPM is low;
+  long-form on the same topics comes later and is the main revenue.
+- First subject: Elon Musk (Zip2, PayPal, 2008 crisis, $0 Tesla salary, wealth in stock not cash).
+
+## Workflow
+1. Scripts written in English (Claude drafts).
+2. The owner records and sends the voiceover audio.
+3. Editing is done by the project's editing skill (ffmpeg + Whisper word-level captions).
+
+## Rules
+- The owner writes in Algerian Arabic (Darija) — reply in Arabic. All channel content is English.
+- YouTube "inauthentic content" policy: no repetitive/templated AI output. Each video needs an
+  original script, real analysis, and the channel's own editing style.
+- Disclaimer on finance content ("general information, not financial advice"); disclose affiliate links.
 - Never promise returns or give personalised investment advice.
 
 ## Layout
-- `docs/` — strategy, niche research, plans
-- `scripts/` — video scripts (one file per video) — create when needed
-- `products/` — digital product drafts — create when needed
+- `docs/` — strategy, roadmap, specs
+- `scripts/` — video scripts, one file per video (create when production starts)
+- `.claude/skills/` — project skills (editing skill goes here)
