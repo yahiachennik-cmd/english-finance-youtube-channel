@@ -61,6 +61,7 @@ def main():
     ap.add_argument("--tts", action="store_true", help="generate a placeholder voice with espeak-ng")
     ap.add_argument("--no-render", action="store_true")
     ap.add_argument("--even", action="store_true", help="skip alignment, spread words evenly")
+    ap.add_argument("--bg", help="background variant: royal | aurora | market | navy (overrides script.json)")
     a = ap.parse_args()
 
     proj = os.path.abspath(a.project)
@@ -213,6 +214,7 @@ def main():
         "captions": captions,
         "visuals": visuals,
         "brand": brand,
+        "background": a.bg or spec.get("background") or brand.get("background", "royal"),
     }
     props_path = os.path.join(pub, "props.json")
     json.dump(props, open(props_path, "w"), indent=1)
@@ -221,7 +223,7 @@ def main():
     if a.no_render:
         return
     os.makedirs(os.path.join(ROOT, "out"), exist_ok=True)
-    out = os.path.join(ROOT, "out", f"{pid}.mp4")
+    out = os.path.join(ROOT, "out", f"{pid}{'-' + a.bg if a.bg else ''}.mp4")
     env = dict(os.environ)
     if BROWSER_CANDIDATES and "REMOTION_BROWSER" not in env:
         env["REMOTION_BROWSER"] = BROWSER_CANDIDATES[0]

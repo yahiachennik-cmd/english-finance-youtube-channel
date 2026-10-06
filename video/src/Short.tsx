@@ -46,7 +46,7 @@ export const Short: React.FC<ShortProps> = (p) => {
 
   return (
     <AbsoluteFill style={{backgroundColor: '#060d1f'}}>
-      <Background burst={burstLevel(frame, bursts)} />
+      <Background burst={burstLevel(frame, bursts)} variant={p.background} />
       {p.visuals.map((v, i) => (
         <VisualLayer key={i} v={v} brand={p.brand} />
       ))}

@@ -1,0 +1,15 @@
+{
+  "title": "Background test (10 s)",
+  "music": false,
+  "scenes": [
+    {"text": "Elon Musk's salary at Tesla? *Zero dollars.*",
+     "visual": {"type": "counter", "from": 1000000, "to": 0, "prefix": "$", "label": "Tesla salary", "labelIcon": "Banknote", "dur": 1.4, "burst": true}},
+    {"text": "No salary. *No cash bonus.*",
+     "visual": {"type": "list", "items": [
+       {"text": "Salary", "icon": "Banknote", "at": "salary", "mark": "cross"},
+       {"text": "Cash bonus", "icon": "Gift", "at": "cash", "mark": "cross"}]}},
+    {"text": "Tesla hit *every single one.*",
+     "visual": {"type": "chart", "points": [10, 14, 12, 22, 30, 28, 55, 90, 150, 135, 210], "dur": 1.2,
+                "yLabel": "Value", "xLabel": "Years", "flash": true}}
+  ]
+}

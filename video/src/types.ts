@@ -24,4 +24,5 @@ export type ShortProps = {
   captions: Caption[];
   visuals: Visual[];
   brand: Brand;
+  background?: 'navy' | 'royal' | 'aurora' | 'market';
 };
