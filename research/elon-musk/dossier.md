@@ -16,7 +16,7 @@
 - Any quote not traced to an original recording/post with a date.
 
 ## Money angles
-- [x] **$0 salary, paid only if Tesla grew** → `video/projects/elon-zero-salary` (needs voice)
+- [x] **$0 salary, paid only if Tesla grew** → `video/projects/elon-zero-salary` (voiced + rendered, Oct 2026)
 - [ ] Zip2 sale → what he did with his payout (needs: sale price, his share — verify)
 - [ ] PayPal → reinvested almost everything into SpaceX/Tesla (needs: payout, amounts — verify)
 - [ ] 2008: near bankruptcy of both companies (needs: dated primary sources — verify)

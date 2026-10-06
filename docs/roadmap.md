@@ -9,7 +9,7 @@
 - [x] بناء السكيل من الصفر: `money-shorts-editor` (Remotion، `video/`)
 - [x] فيديو تجريبي 1: `elon-zero-salary` (بصوت روبو مؤقت)
 - [x] الخلفية: **Royal** (أزرق ملكي + ذهبي) — معتمدة كأسلوب القناة
-- [ ] فويس حقيقي من يحيى للفيديو التجريبي
+- [x] فويس حقيقي من يحيى → أول فيديو كامل `elon-zero-salary`
 - [ ] اسم القناة واللوغو (`video/brand.json` — مؤقتاً MONEY MINDS)
 - [ ] مزيكا حقيقية بلا حقوق في `video/public/music/`
 - [ ] السماح بـ `huggingface.co` باش Whisper يخدم (تزامن أدق)
