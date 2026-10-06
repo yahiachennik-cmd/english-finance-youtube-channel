@@ -1,0 +1,22 @@
+[
+ {"file": "images/elon-2015-tesla-meeting.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Elon_Musk_2015.jpg",
+  "author": "Steve Jurvetson", "license": "CC BY 2.0",
+  "credit": "Photo: Steve Jurvetson, CC BY 2.0, via Wikimedia Commons",
+  "use": "scene 1 hook — backdrop behind the $0 counter (Musk at the 2015 Tesla annual meeting)"},
+ {"file": "images/elon-tesla-owners-belgium.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Elon_Musk_(12271223586).jpg",
+  "author": "Tesla Owners Club Belgium", "license": "CC BY 2.0",
+  "credit": "Photo: Tesla Owners Club Belgium, CC BY 2.0, via Wikimedia Commons",
+  "use": "scenes 5-6 'stock options' — person card"},
+ {"file": "images/elon-2008-jdlasica.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Elon_Musk_(3017880307).jpg",
+  "author": "JD Lasica", "license": "CC BY 2.0",
+  "credit": "Photo: JD Lasica, CC BY 2.0, via Wikimedia Commons",
+  "use": "scene 7 'Back then...' — backdrop (earlier-era Musk)"},
+ {"file": "images/elon-nasa-ksc-2020.jpg",
+  "page": "https://images.nasa.gov/details-KSC-20200530-PH-KLS04_0043",
+  "author": "NASA/Kim Shiflett", "license": "Public domain (NASA)",
+  "credit": "Photo: NASA, public domain",
+  "use": "scene 10 'Tesla unlocked all 12' — backdrop (Musk, May 2020, the period Tesla's value took off)"}
+]

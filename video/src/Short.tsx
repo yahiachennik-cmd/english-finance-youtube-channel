@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {AbsoluteFill, Audio, Sequence, continueRender, delayRender, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {Background, burstLevel} from './Background';
 import {Captions} from './Captions';
+import {Backdrop} from './Backdrop';
 import {VISUALS, Outro} from './visuals';
 import {ShortProps, Visual} from './types';
 import {exitStyle, sec} from './anim';
@@ -47,6 +48,9 @@ export const Short: React.FC<ShortProps> = (p) => {
   return (
     <AbsoluteFill style={{backgroundColor: '#060d1f'}}>
       <Background burst={burstLevel(frame, bursts)} variant={p.background} />
+      {p.visuals.filter((v) => v.backdrop).map((v, i) => (
+        <Backdrop key={`bd${i}`} b={v.backdrop} start={v.start} end={v.end} />
+      ))}
       {p.visuals.map((v, i) => (
         <VisualLayer key={i} v={v} brand={p.brand} />
       ))}

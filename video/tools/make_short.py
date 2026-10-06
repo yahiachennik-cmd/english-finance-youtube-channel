@@ -94,6 +94,15 @@ def main():
                 problems.append(f"scene {i + 1} cites unknown source '{r}'")
         if isinstance(vis, dict) and vis.get("type") in ("clip", "person") and (vis.get("src") or vis.get("image")) and not vis.get("credit"):
             problems.append(f"scene {i + 1}: media without credit")
+        if isinstance(vis, dict) and isinstance(vis.get("backdrop"), dict) and not vis["backdrop"].get("credit"):
+            problems.append(f"scene {i + 1}: backdrop without credit")
+        for key in ("image", "src"):
+            m = vis.get(key) if isinstance(vis, dict) else None
+            if m and not os.path.exists(os.path.join(ROOT, "public", m)):
+                problems.append(f"scene {i + 1}: missing media file public/{m}")
+        bd = vis.get("backdrop") if isinstance(vis, dict) else None
+        if isinstance(bd, dict) and not os.path.exists(os.path.join(ROOT, "public", bd.get("src", ""))):
+            problems.append(f"scene {i + 1}: missing backdrop file public/{bd.get('src')}")
     if problems:
         print("FACT-CHECK GATE:\n  " + "\n  ".join(problems))
         if not a.allow_unsourced:
@@ -250,6 +259,7 @@ def main():
             desc.append(f"- {x['title']} — {x['url']}")
         desc.append("")
     credits = [v.get("credit") for v in visuals if v.get("credit")]
+    credits += [v["backdrop"]["credit"] for v in visuals if isinstance(v.get("backdrop"), dict) and v["backdrop"].get("credit")]
     if credits:
         desc.append("Media credits:")
         desc += [f"- {c}" for c in dict.fromkeys(credits)]
