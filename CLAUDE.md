@@ -21,6 +21,8 @@ How billionaires and top business people **think about and make money**
 - First subject: Elon Musk (Zip2, PayPal, 2008 crisis, $0 Tesla salary, wealth in stock not cash).
 
 ## Workflow
+0. The owner names a person/topic → skill `short-producer` (`.claude/skills/short-producer/SKILL.md`):
+   research dossier in `research/<person>/`, sourced script, licensed media, voiceover text.
 1. Scripts written in English (Claude drafts).
 2. The owner records and sends the voiceover audio.
 3. Editing: skill `money-shorts-editor` (`.claude/skills/money-shorts-editor/SKILL.md`) — Remotion
@@ -40,5 +42,6 @@ How billionaires and top business people **think about and make money**
 
 ## Layout
 - `docs/` — strategy, roadmap, specs
+- `research/<person>/dossier.md` — verified facts + sources + video ideas per person (reused across Shorts)
 - `video/` — Remotion project; one folder per Short in `video/projects/<id>/` (script.json + voice)
 - `.claude/skills/` — project skills (editing skill goes here)
