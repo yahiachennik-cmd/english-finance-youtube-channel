@@ -1,42 +1,254 @@
 {
-  "title": "Elon Musk's Salary at Tesla Was $0. Here's Why.",
-  "sources": [
-    "Tesla 2018 CEO Performance Award — SEC filing (DEF 14A, Feb 2018): no salary, no cash bonus, 12 tranches tied to market-cap milestones from $100B to $650B in $50B steps plus revenue/EBITDA milestones."
-  ],
-  "scenes": [
-    {"text": "Elon Musk's salary at Tesla? *Zero dollars.*",
-     "visual": {"type": "counter", "from": 1000000, "to": 0, "prefix": "$", "label": "Tesla salary", "labelIcon": "Banknote", "dur": 1.6, "burst": true}},
-    {"text": "No salary. *No cash bonus.*",
-     "visual": {"type": "list", "items": [
-       {"text": "Salary", "icon": "Banknote", "at": "salary", "mark": "cross"},
-       {"text": "Cash bonus", "icon": "Gift", "at": "cash", "mark": "cross"}]}},
-    {"text": "In 2018, Tesla paid him *only in stock*",
-     "visual": {"type": "icon", "icon": "TrendingUp", "flash": true, "pills": [{"text": "Stock only", "icon": "PieChart", "at": "stock"}]}},
-    {"text": "and *only if* the company grew.", "visual": "keep"},
-    {"text": "*12 targets.* From $100B to *$650B* in value.",
-     "visual": {"type": "bars", "bars": [
-       {"label": "1", "value": 100, "display": "$100B"},
-       {"label": "", "value": 150, "display": ""}, {"label": "", "value": 200, "display": ""},
-       {"label": "", "value": 250, "display": ""}, {"label": "", "value": 300, "display": ""},
-       {"label": "", "value": 350, "display": ""}, {"label": "", "value": 400, "display": ""},
-       {"label": "", "value": 450, "display": ""}, {"label": "", "value": 500, "display": ""},
-       {"label": "", "value": 550, "display": ""}, {"label": "", "value": 600, "display": ""},
-       {"label": "12", "value": 650, "display": "$650B", "at": "650b"}]}},
-    {"text": "Most people called it *impossible.*",
-     "visual": {"type": "icon", "icon": "Ban"}},
-    {"text": "Tesla hit *every single one.*",
-     "visual": {"type": "chart", "points": [10, 14, 12, 22, 30, 28, 55, 90, 150, 135, 210], "color": "gold",
-                "yLabel": "Value", "xLabel": "Years", "dur": 1.4,
-                "markers": [{"index": 10, "text": "12 / 12 ✓", "at": "one"}]}},
-    {"text": "The lesson? A salary pays you for your *time.*",
-     "visual": {"type": "compare", "flash": true,
-                "left": {"title": "Salary", "icon": "Clock", "sub": "Paid for your time"},
-                "right": {"title": "Ownership", "icon": "PieChart", "sub": "Paid for value", "at": "ownership"},
-                "winner": "right", "winnerAt": "ownership", "loserMark": "cross"}},
-    {"text": "*Ownership* pays you for the *value you create.*", "visual": "keep"},
-    {"text": "Stop only earning. *Start owning.*",
-     "visual": {"type": "icon", "icon": "Key", "burst": true}},
-    {"text": "Follow for more billionaire money lessons.",
-     "visual": {"type": "outro"}}
-  ]
+ "title": "Elon Musk's Tesla Salary Was $0. Here's Why.",
+ "sources": [
+  {
+   "id": "proxy2018",
+   "title": "Tesla, Inc. 2018 Proxy Statement (DEF 14A) — 2018 CEO Performance Award: no salary, no cash bonus, 12 tranches, $100B→$650B market-cap milestones",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000119312518035345/d524719ddef14a.htm"
+  },
+  {
+   "id": "pr2018",
+   "title": "Tesla press release, Jan 23 2018 (Form 8-K, Ex. 99.1) — Board announces new long-term performance award",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001318605/000119312518016648/d500497dex991.htm"
+  },
+  {
+   "id": "harvard2018",
+   "title": "Harvard Law School Forum on Corporate Governance — 'Elon Musk's Compensation' (May 2018): market cap ≈ $59B at grant",
+   "url": "https://corpgov.law.harvard.edu/2018/05/22/elon-musks-compensation/"
+  },
+  {
+   "id": "10k2023",
+   "title": "Tesla, Inc. Form 10-K FY2023 — all 12 tranches of the 2018 CEO Performance Award vested",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm"
+  }
+ ],
+ "scenes": [
+  {
+   "text": "Elon Musk's Tesla salary? *Zero dollars.*",
+   "visual": {
+    "type": "counter",
+    "from": 1000000,
+    "to": 0,
+    "prefix": "$",
+    "label": "Tesla salary",
+    "labelIcon": "Banknote",
+    "dur": 1.6,
+    "burst": true
+   },
+   "source": [
+    "proxy2018"
+   ]
+  },
+  {
+   "text": "His 2018 deal had no salary. *No cash bonus.*",
+   "visual": {
+    "type": "list",
+    "items": [
+     {
+      "text": "Salary",
+      "icon": "Banknote",
+      "at": "salary",
+      "mark": "cross"
+     },
+     {
+      "text": "Cash bonus",
+      "icon": "Gift",
+      "at": "cash",
+      "mark": "cross"
+     }
+    ]
+   },
+   "source": [
+    "proxy2018"
+   ]
+  },
+  {
+   "text": "He was paid *only in stock options*",
+   "visual": {
+    "type": "icon",
+    "icon": "TrendingUp",
+    "flash": true,
+    "pills": [
+     {
+      "text": "Stock only",
+      "icon": "PieChart",
+      "at": "stock"
+     }
+    ]
+   },
+   "source": [
+    "proxy2018"
+   ]
+  },
+  {
+   "text": "and *only if* Tesla hit huge targets.",
+   "visual": "keep",
+   "source": [
+    "proxy2018"
+   ]
+  },
+  {
+   "text": "*12 targets.* From $100B to *$650B* in value.",
+   "visual": {
+    "type": "bars",
+    "bars": [
+     {
+      "label": "1",
+      "value": 100,
+      "display": "$100B"
+     },
+     {
+      "label": "",
+      "value": 150,
+      "display": ""
+     },
+     {
+      "label": "",
+      "value": 200,
+      "display": ""
+     },
+     {
+      "label": "",
+      "value": 250,
+      "display": ""
+     },
+     {
+      "label": "",
+      "value": 300,
+      "display": ""
+     },
+     {
+      "label": "",
+      "value": 350,
+      "display": ""
+     },
+     {
+      "label": "",
+      "value": 400,
+      "display": ""
+     },
+     {
+      "label": "",
+      "value": 450,
+      "display": ""
+     },
+     {
+      "label": "",
+      "value": 500,
+      "display": ""
+     },
+     {
+      "label": "",
+      "value": 550,
+      "display": ""
+     },
+     {
+      "label": "",
+      "value": 600,
+      "display": ""
+     },
+     {
+      "label": "12",
+      "value": 650,
+      "display": "$650B",
+      "at": "650b"
+     }
+    ]
+   },
+   "source": [
+    "proxy2018"
+   ]
+  },
+  {
+   "text": "Back then, Tesla was worth about *$59B.*",
+   "source": [
+    "harvard2018"
+   ],
+   "visual": {
+    "type": "counter",
+    "from": 0,
+    "to": 59,
+    "prefix": "$",
+    "suffix": "B",
+    "label": "Tesla value, Jan 2018",
+    "labelIcon": "Building2",
+    "dur": 1.2
+   }
+  },
+  {
+   "text": "Tesla hit *every single one.*",
+   "visual": {
+    "type": "chart",
+    "points": [
+     10,
+     14,
+     12,
+     22,
+     30,
+     28,
+     55,
+     90,
+     150,
+     135,
+     210
+    ],
+    "color": "gold",
+    "yLabel": "Value",
+    "xLabel": "Years",
+    "dur": 1.4,
+    "markers": [
+     {
+      "index": 10,
+      "text": "12 / 12 ✓",
+      "at": "one"
+     }
+    ]
+   },
+   "source": [
+    "10k2023"
+   ]
+  },
+  {
+   "text": "The lesson? A salary pays you for your *time.*",
+   "visual": {
+    "type": "compare",
+    "flash": true,
+    "left": {
+     "title": "Salary",
+     "icon": "Clock",
+     "sub": "Paid for your time"
+    },
+    "right": {
+     "title": "Ownership",
+     "icon": "PieChart",
+     "sub": "Paid for value",
+     "at": "ownership"
+    },
+    "winner": "right",
+    "winnerAt": "ownership",
+    "loserMark": "cross"
+   },
+   "opinion": true
+  },
+  {
+   "text": "*Ownership* pays you for the *value you create.*",
+   "visual": "keep",
+   "opinion": true
+  },
+  {
+   "text": "Stop only earning. *Start owning.*",
+   "visual": {
+    "type": "icon",
+    "icon": "Key",
+    "burst": true
+   },
+   "opinion": true
+  },
+  {
+   "text": "Follow for more billionaire money lessons.",
+   "visual": {
+    "type": "outro"
+   }
+  }
+ ]
 }

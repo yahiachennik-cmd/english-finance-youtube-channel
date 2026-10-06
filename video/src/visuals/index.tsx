@@ -7,6 +7,7 @@ import {Bars} from './Bars';
 import {Person} from './Person';
 import {Timeline} from './Timeline';
 import {Quote} from './Quote';
+import {Clip} from './Clip';
 import {VProps} from './common';
 
 export const VISUALS: Record<string, React.FC<VProps>> = {
@@ -19,5 +20,6 @@ export const VISUALS: Record<string, React.FC<VProps>> = {
   person: Person,
   timeline: Timeline,
   quote: Quote,
+  clip: Clip,
 };
 export {Outro} from './Outro';

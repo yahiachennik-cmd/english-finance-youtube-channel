@@ -30,6 +30,11 @@ How billionaires and top business people **think about and make money**
 - The owner writes in Algerian Arabic (Darija) — reply in Arabic. All channel content is English.
 - YouTube "inauthentic content" policy: no repetitive/templated AI output. Each video needs an
   original script, real analysis, and the channel's own editing style.
+- **Every factual claim must be backed by a primary or top-tier source** (SEC filings, annual
+  reports, shareholder letters, court records, Reuters/Bloomberg/WSJ/FT/AP). No unsourced numbers, no
+  viral "quotes" without an original source. See `docs/sources-and-media-policy.md`.
+- Public figures' photos/clips are NOT free to use: only CC / public-domain media with credit, clips ≤ 4 s,
+  ≤ 20% of a video, never AI deepfakes of real people.
 - Disclaimer on finance content ("general information, not financial advice"); disclose affiliate links.
 - Never promise returns or give personalised investment advice.
 

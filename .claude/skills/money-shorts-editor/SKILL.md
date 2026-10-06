@@ -60,17 +60,27 @@ video/
    loudness ≈ -14…-17 LUFS (`ffmpeg -i out/<id>.mp4 -af ebur128 -f null -`).
 6. Send the MP4 to the owner with a 2-line summary. Iterate on feedback.
 
+## Sources gate (mandatory)
+`make_short.py` refuses to render if any non-outro scene lacks a `source` that matches an id in
+`"sources"`. Lesson/opinion scenes must be marked `"opinion": true`. Use primary documents first
+(SEC filings, shareholder letters, court records), then Reuters/Bloomberg/WSJ/FT/AP. Verify every
+number with WebSearch before writing it; rephrase to exactly what the source says. Full policy:
+`docs/sources-and-media-policy.md`. The pipeline also writes `projects/<id>/description.txt`
+(sources + media credits + disclaimer) for the YouTube description.
+
 ## script.json format
 ```json
 {
   "title": "Elon Musk's Salary at Tesla Was $0. Here's Why.",
-  "sources": ["Tesla 2018 CEO Performance Award, SEC DEF 14A"],
+  "sources": [{"id": "proxy2018", "title": "Tesla 2018 Proxy Statement (DEF 14A)", "url": "https://www.sec.gov/..."}],
   "music": "track.mp3",          // optional, file in public/music; false = no music
   "musicVolume": 0.13,           // optional
   "scenes": [
     {"text": "Elon Musk's salary at Tesla? *Zero dollars.*",
+     "source": ["proxy2018"],
      "visual": {"type": "counter", "from": 1000000, "to": 0, "prefix": "$", "label": "Tesla salary", "burst": true}},
-    {"text": "and *only if* the company grew.", "visual": "keep"},
+    {"text": "and *only if* Tesla hit huge targets.", "source": "proxy2018", "visual": "keep"},
+    {"text": "Stop only earning. *Start owning.*", "opinion": true, "visual": {"type": "icon", "icon": "Key"}},
     {"text": "Follow for more billionaire money lessons.", "visual": {"type": "outro"}}
   ]
 }
@@ -94,7 +104,8 @@ video/
 | `compare` | `left/right:{title, icon?, value?, sub?, at?}`, `winner?: left/right`, `winnerAt?`, `loserMark?: "cross"` |
 | `person` | `name`, `role?`, `image?` (in `public/images`), `credit`, `badge?:{text, at?}`, `source?:{title, sub}` |
 | `timeline` | `events:[{year, text, at?, color?}]` (≤ 5) |
-| `quote` | `text`, `author` |
+| `quote` | `text`, `author` (only verbatim quotes from a cited original source) |
+| `clip` | `src` (`clips/x.mp4` or `images/x.jpg` in `public/`), `credit` (required), `startFrom?`, `caption?` — licensed media only, ≤ 4 s |
 | `outro` | — (uses brand.json) |
 
 To add a type: create `src/visuals/<Name>.tsx` (props `{v, f}`, `f` = frames since the visual
@@ -104,8 +115,9 @@ register it in `src/visuals/index.tsx`, document it in this table.
 ## Rules
 - **Never a biography.** Each Short = how they think about / made money + one applicable lesson.
 - **Facts must be real and sourced** (filings, dates, numbers). No invented quotes.
-- **Images of real people:** only freely licensed (Wikimedia Commons CC / public domain) with `credit`
-  filled. Without an image the person card shows gold initials — that is fine.
+- **Images/clips of real people:** being famous does not make their photos free. Only Wikimedia
+  Commons CC / public domain / NASA / CC-BY YouTube, with `credit` filled; clips ≤ 4 s and ≤ 20% of the
+  video; never AI deepfakes. Without an image the person card shows gold initials — that is fine.
 - **Music:** only royalty-free tracks the owner is allowed to use (YouTube Audio Library etc.).
   `public/music/ambient-placeholder.mp3` is a generated placeholder.
 - Vary visuals between videos (different types/order/icons) so no two Shorts look templated —

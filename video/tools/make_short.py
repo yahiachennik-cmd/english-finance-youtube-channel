@@ -61,6 +61,7 @@ def main():
     ap.add_argument("--tts", action="store_true", help="generate a placeholder voice with espeak-ng")
     ap.add_argument("--no-render", action="store_true")
     ap.add_argument("--even", action="store_true", help="skip alignment, spread words evenly")
+    ap.add_argument("--allow-unsourced", action="store_true", help="draft only: skip the sources gate")
     ap.add_argument("--bg", help="background variant: royal | aurora | market | navy (overrides script.json)")
     a = ap.parse_args()
 
@@ -74,6 +75,29 @@ def main():
     os.makedirs(pub, exist_ok=True)
     work = os.path.join(proj, ".work")
     os.makedirs(work, exist_ok=True)
+
+    # ---- fact-check gate: every factual scene must cite a source id from "sources"
+    src_ids = {x["id"] for x in spec.get("sources", []) if isinstance(x, dict)}
+    problems = []
+    for i, sc in enumerate(scenes):
+        vis = sc.get("visual")
+        if isinstance(vis, dict) and vis.get("type") == "outro":
+            continue
+        if sc.get("opinion"):
+            continue
+        refs = sc.get("source")
+        refs = [refs] if isinstance(refs, str) else (refs or [])
+        if not refs:
+            problems.append(f"scene {i + 1} has no source: {sc['text']!r}")
+        for r in refs:
+            if r not in src_ids:
+                problems.append(f"scene {i + 1} cites unknown source '{r}'")
+        if isinstance(vis, dict) and vis.get("type") in ("clip", "person") and (vis.get("src") or vis.get("image")) and not vis.get("credit"):
+            problems.append(f"scene {i + 1}: media without credit")
+    if problems:
+        print("FACT-CHECK GATE:\n  " + "\n  ".join(problems))
+        if not a.allow_unsourced:
+            sys.exit("Fix the sources (or mark lesson/opinion scenes with \"opinion\": true). --allow-unsourced to bypass for drafts.")
 
     # ---- tokens
     per_scene = [tokenize(s["text"]) for s in scenes]
@@ -216,6 +240,23 @@ def main():
         "brand": brand,
         "background": a.bg or spec.get("background") or brand.get("background", "royal"),
     }
+    # ---- YouTube description with sources + disclaimer
+    desc = [spec.get("title", pid), ""]
+    if spec.get("description"):
+        desc += [spec["description"], ""]
+    if spec.get("sources"):
+        desc.append("Sources:")
+        for x in spec["sources"]:
+            desc.append(f"- {x['title']} — {x['url']}")
+        desc.append("")
+    credits = [v.get("credit") for v in visuals if v.get("credit")]
+    if credits:
+        desc.append("Media credits:")
+        desc += [f"- {c}" for c in dict.fromkeys(credits)]
+        desc.append("")
+    desc.append("This video is for general information and education only. It is not financial advice.")
+    open(os.path.join(proj, "description.txt"), "w").write("\n".join(desc) + "\n")
+
     props_path = os.path.join(pub, "props.json")
     json.dump(props, open(props_path, "w"), indent=1)
     print(f"props -> {props_path}  ({end_all:.1f}s)")
