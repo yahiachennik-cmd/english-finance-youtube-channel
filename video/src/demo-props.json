@@ -1,0 +1,654 @@
+{
+ "fps": 30,
+ "durationInFrames": 937,
+ "voice": null,
+ "music": "music/ambient-placeholder.mp3",
+ "musicVolume": 0.13,
+ "captions": [
+  {
+   "start": 0.0,
+   "end": 3.166,
+   "words": [
+    {
+     "text": "Elon",
+     "start": 0.0,
+     "end": 0.286,
+     "hl": false
+    },
+    {
+     "text": "Musk's",
+     "start": 0.317,
+     "end": 0.698,
+     "hl": false
+    },
+    {
+     "text": "salary",
+     "start": 0.741,
+     "end": 1.122,
+     "hl": false
+    },
+    {
+     "text": "at",
+     "start": 1.164,
+     "end": 1.355,
+     "hl": false
+    },
+    {
+     "text": "Tesla?",
+     "start": 1.376,
+     "end": 1.757,
+     "hl": false
+    },
+    {
+     "text": "Zero",
+     "start": 1.799,
+     "end": 2.085,
+     "hl": true
+    },
+    {
+     "text": "dollars.",
+     "start": 2.117,
+     "end": 2.593,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "start": 3.166,
+   "end": 5.408,
+   "words": [
+    {
+     "text": "No",
+     "start": 3.166,
+     "end": 3.366,
+     "hl": false
+    },
+    {
+     "text": "salary.",
+     "start": 3.388,
+     "end": 3.838,
+     "hl": false
+    },
+    {
+     "text": "No",
+     "start": 3.888,
+     "end": 4.088,
+     "hl": true
+    },
+    {
+     "text": "cash",
+     "start": 4.11,
+     "end": 4.41,
+     "hl": true
+    },
+    {
+     "text": "bonus.",
+     "start": 4.444,
+     "end": 4.844,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "start": 5.408,
+   "end": 8.825,
+   "words": [
+    {
+     "text": "In",
+     "start": 5.408,
+     "end": 5.635,
+     "hl": false
+    },
+    {
+     "text": "2018,",
+     "start": 5.66,
+     "end": 6.057,
+     "hl": false
+    },
+    {
+     "text": "Tesla",
+     "start": 6.101,
+     "end": 6.498,
+     "hl": false
+    },
+    {
+     "text": "paid",
+     "start": 6.542,
+     "end": 6.882,
+     "hl": false
+    },
+    {
+     "text": "him",
+     "start": 6.919,
+     "end": 7.203,
+     "hl": false
+    },
+    {
+     "text": "only",
+     "start": 7.234,
+     "end": 7.574,
+     "hl": true
+    },
+    {
+     "text": "in",
+     "start": 7.612,
+     "end": 7.839,
+     "hl": true
+    },
+    {
+     "text": "stock",
+     "start": 7.864,
+     "end": 8.261,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "start": 8.825,
+   "end": 10.777,
+   "words": [
+    {
+     "text": "and",
+     "start": 8.825,
+     "end": 9.004,
+     "hl": false
+    },
+    {
+     "text": "only",
+     "start": 9.024,
+     "end": 9.238,
+     "hl": true
+    },
+    {
+     "text": "if",
+     "start": 9.262,
+     "end": 9.405,
+     "hl": true
+    },
+    {
+     "text": "the",
+     "start": 9.421,
+     "end": 9.6,
+     "hl": false
+    },
+    {
+     "text": "company",
+     "start": 9.62,
+     "end": 9.943,
+     "hl": false
+    },
+    {
+     "text": "grew.",
+     "start": 9.978,
+     "end": 10.229,
+     "hl": false
+    }
+   ]
+  },
+  {
+   "start": 10.777,
+   "end": 16.32,
+   "words": [
+    {
+     "text": "12",
+     "start": 10.777,
+     "end": 11.138,
+     "hl": true
+    },
+    {
+     "text": "targets.",
+     "start": 11.179,
+     "end": 12.083,
+     "hl": true
+    },
+    {
+     "text": "From",
+     "start": 12.183,
+     "end": 12.726,
+     "hl": false
+    },
+    {
+     "text": "$100B",
+     "start": 12.786,
+     "end": 13.419,
+     "hl": false
+    },
+    {
+     "text": "to",
+     "start": 13.489,
+     "end": 13.851,
+     "hl": false
+    },
+    {
+     "text": "$650B",
+     "start": 13.891,
+     "end": 14.524,
+     "hl": true
+    },
+    {
+     "text": "in",
+     "start": 14.594,
+     "end": 14.956,
+     "hl": false
+    },
+    {
+     "text": "value.",
+     "start": 14.996,
+     "end": 15.719,
+     "hl": false
+    }
+   ]
+  },
+  {
+   "start": 16.32,
+   "end": 18.426,
+   "words": [
+    {
+     "text": "Most",
+     "start": 16.32,
+     "end": 16.539,
+     "hl": false
+    },
+    {
+     "text": "people",
+     "start": 16.564,
+     "end": 16.857,
+     "hl": false
+    },
+    {
+     "text": "called",
+     "start": 16.889,
+     "end": 17.182,
+     "hl": false
+    },
+    {
+     "text": "it",
+     "start": 17.215,
+     "end": 17.361,
+     "hl": false
+    },
+    {
+     "text": "impossible.",
+     "start": 17.377,
+     "end": 17.853,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "start": 18.426,
+   "end": 20.301,
+   "words": [
+    {
+     "text": "Tesla",
+     "start": 18.426,
+     "end": 18.685,
+     "hl": false
+    },
+    {
+     "text": "hit",
+     "start": 18.714,
+     "end": 18.898,
+     "hl": false
+    },
+    {
+     "text": "every",
+     "start": 18.919,
+     "end": 19.177,
+     "hl": true
+    },
+    {
+     "text": "single",
+     "start": 19.206,
+     "end": 19.502,
+     "hl": true
+    },
+    {
+     "text": "one.",
+     "start": 19.535,
+     "end": 19.756,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "start": 20.301,
+   "end": 23.19,
+   "words": [
+    {
+     "text": "The",
+     "start": 20.301,
+     "end": 20.498,
+     "hl": false
+    },
+    {
+     "text": "lesson?",
+     "start": 20.52,
+     "end": 20.876,
+     "hl": false
+    },
+    {
+     "text": "A",
+     "start": 20.915,
+     "end": 21.034,
+     "hl": false
+    },
+    {
+     "text": "salary",
+     "start": 21.047,
+     "end": 21.363,
+     "hl": false
+    },
+    {
+     "text": "pays",
+     "start": 21.398,
+     "end": 21.635,
+     "hl": false
+    },
+    {
+     "text": "you",
+     "start": 21.661,
+     "end": 21.858,
+     "hl": false
+    },
+    {
+     "text": "for",
+     "start": 21.88,
+     "end": 22.078,
+     "hl": false
+    },
+    {
+     "text": "your",
+     "start": 22.1,
+     "end": 22.336,
+     "hl": false
+    },
+    {
+     "text": "time.",
+     "start": 22.363,
+     "end": 22.639,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "start": 23.19,
+   "end": 25.659,
+   "words": [
+    {
+     "text": "Ownership",
+     "start": 23.19,
+     "end": 23.554,
+     "hl": true
+    },
+    {
+     "text": "pays",
+     "start": 23.594,
+     "end": 23.793,
+     "hl": false
+    },
+    {
+     "text": "you",
+     "start": 23.815,
+     "end": 23.981,
+     "hl": false
+    },
+    {
+     "text": "for",
+     "start": 23.999,
+     "end": 24.164,
+     "hl": false
+    },
+    {
+     "text": "the",
+     "start": 24.183,
+     "end": 24.348,
+     "hl": false
+    },
+    {
+     "text": "value",
+     "start": 24.367,
+     "end": 24.598,
+     "hl": true
+    },
+    {
+     "text": "you",
+     "start": 24.624,
+     "end": 24.79,
+     "hl": true
+    },
+    {
+     "text": "create.",
+     "start": 24.808,
+     "end": 25.106,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "start": 25.659,
+   "end": 28.051,
+   "words": [
+    {
+     "text": "Stop",
+     "start": 25.659,
+     "end": 25.925,
+     "hl": false
+    },
+    {
+     "text": "only",
+     "start": 25.955,
+     "end": 26.221,
+     "hl": false
+    },
+    {
+     "text": "earning.",
+     "start": 26.25,
+     "end": 26.693,
+     "hl": false
+    },
+    {
+     "text": "Start",
+     "start": 26.743,
+     "end": 27.053,
+     "hl": true
+    },
+    {
+     "text": "owning.",
+     "start": 27.087,
+     "end": 27.486,
+     "hl": true
+    }
+   ]
+  }
+ ],
+ "visuals": [
+  {
+   "type": "counter",
+   "from": 1000000,
+   "to": 0,
+   "prefix": "$",
+   "label": "Tesla salary",
+   "labelIcon": "Banknote",
+   "dur": 1.6,
+   "burst": true,
+   "start": 0.0,
+   "end": 3.166
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "text": "Salary",
+     "icon": "Banknote",
+     "at": 0.272,
+     "mark": "cross"
+    },
+    {
+     "text": "Cash bonus",
+     "icon": "Gift",
+     "at": 0.994,
+     "mark": "cross"
+    }
+   ],
+   "start": 3.066,
+   "end": 5.408
+  },
+  {
+   "type": "icon",
+   "icon": "TrendingUp",
+   "flash": true,
+   "pills": [
+    {
+     "text": "Stock only",
+     "icon": "PieChart",
+     "at": 2.506
+    }
+   ],
+   "start": 5.308,
+   "end": 10.777
+  },
+  {
+   "type": "bars",
+   "bars": [
+    {
+     "label": "1",
+     "value": 100,
+     "display": "$100B",
+     "at": 2.059
+    },
+    {
+     "label": "",
+     "value": 150,
+     "display": ""
+    },
+    {
+     "label": "",
+     "value": 200,
+     "display": ""
+    },
+    {
+     "label": "",
+     "value": 250,
+     "display": ""
+    },
+    {
+     "label": "",
+     "value": 300,
+     "display": ""
+    },
+    {
+     "label": "",
+     "value": 350,
+     "display": ""
+    },
+    {
+     "label": "",
+     "value": 400,
+     "display": ""
+    },
+    {
+     "label": "",
+     "value": 450,
+     "display": ""
+    },
+    {
+     "label": "",
+     "value": 500,
+     "display": ""
+    },
+    {
+     "label": "",
+     "value": 550,
+     "display": ""
+    },
+    {
+     "label": "",
+     "value": 600,
+     "display": ""
+    },
+    {
+     "label": "12",
+     "value": 650,
+     "display": "$650B",
+     "at": 3.164
+    }
+   ],
+   "start": 10.677,
+   "end": 16.32
+  },
+  {
+   "type": "icon",
+   "icon": "Ban",
+   "start": 16.22,
+   "end": 18.426
+  },
+  {
+   "type": "chart",
+   "points": [
+    10,
+    14,
+    12,
+    22,
+    30,
+    28,
+    55,
+    90,
+    150,
+    135,
+    210
+   ],
+   "color": "gold",
+   "yLabel": "Value",
+   "xLabel": "Years",
+   "dur": 1.4,
+   "markers": [
+    {
+     "index": 10,
+     "text": "12 / 12 \u2713",
+     "at": 1.159
+    }
+   ],
+   "start": 18.326,
+   "end": 20.301
+  },
+  {
+   "type": "compare",
+   "flash": true,
+   "left": {
+    "title": "Salary",
+    "icon": "Clock",
+    "sub": "Paid for your time"
+   },
+   "right": {
+    "title": "Ownership",
+    "icon": "PieChart",
+    "sub": "Paid for value",
+    "at": 2.939
+   },
+   "winner": "right",
+   "winnerAt": "ownership",
+   "loserMark": "cross",
+   "start": 20.201,
+   "end": 25.659
+  },
+  {
+   "type": "icon",
+   "icon": "Key",
+   "burst": true,
+   "start": 25.559,
+   "end": 28.051
+  },
+  {
+   "type": "outro",
+   "start": 27.951,
+   "end": 31.235688
+  }
+ ],
+ "brand": {
+  "name": "MONEY MINDS",
+  "handle": "@MONEYMINDS",
+  "tagline": "Think like the 1%.",
+  "cta": "Follow for more"
+ }
+}

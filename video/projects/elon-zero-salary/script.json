@@ -1,0 +1,42 @@
+{
+  "title": "Elon Musk's Salary at Tesla Was $0. Here's Why.",
+  "sources": [
+    "Tesla 2018 CEO Performance Award — SEC filing (DEF 14A, Feb 2018): no salary, no cash bonus, 12 tranches tied to market-cap milestones from $100B to $650B in $50B steps plus revenue/EBITDA milestones."
+  ],
+  "scenes": [
+    {"text": "Elon Musk's salary at Tesla? *Zero dollars.*",
+     "visual": {"type": "counter", "from": 1000000, "to": 0, "prefix": "$", "label": "Tesla salary", "labelIcon": "Banknote", "dur": 1.6, "burst": true}},
+    {"text": "No salary. *No cash bonus.*",
+     "visual": {"type": "list", "items": [
+       {"text": "Salary", "icon": "Banknote", "at": "salary", "mark": "cross"},
+       {"text": "Cash bonus", "icon": "Gift", "at": "cash", "mark": "cross"}]}},
+    {"text": "In 2018, Tesla paid him *only in stock*",
+     "visual": {"type": "icon", "icon": "TrendingUp", "flash": true, "pills": [{"text": "Stock only", "icon": "PieChart", "at": "stock"}]}},
+    {"text": "and *only if* the company grew.", "visual": "keep"},
+    {"text": "*12 targets.* From $100B to *$650B* in value.",
+     "visual": {"type": "bars", "bars": [
+       {"label": "1", "value": 100, "display": "$100B"},
+       {"label": "", "value": 150, "display": ""}, {"label": "", "value": 200, "display": ""},
+       {"label": "", "value": 250, "display": ""}, {"label": "", "value": 300, "display": ""},
+       {"label": "", "value": 350, "display": ""}, {"label": "", "value": 400, "display": ""},
+       {"label": "", "value": 450, "display": ""}, {"label": "", "value": 500, "display": ""},
+       {"label": "", "value": 550, "display": ""}, {"label": "", "value": 600, "display": ""},
+       {"label": "12", "value": 650, "display": "$650B", "at": "650b"}]}},
+    {"text": "Most people called it *impossible.*",
+     "visual": {"type": "icon", "icon": "Ban"}},
+    {"text": "Tesla hit *every single one.*",
+     "visual": {"type": "chart", "points": [10, 14, 12, 22, 30, 28, 55, 90, 150, 135, 210], "color": "gold",
+                "yLabel": "Value", "xLabel": "Years", "dur": 1.4,
+                "markers": [{"index": 10, "text": "12 / 12 ✓", "at": "one"}]}},
+    {"text": "The lesson? A salary pays you for your *time.*",
+     "visual": {"type": "compare", "flash": true,
+                "left": {"title": "Salary", "icon": "Clock", "sub": "Paid for your time"},
+                "right": {"title": "Ownership", "icon": "PieChart", "sub": "Paid for value", "at": "ownership"},
+                "winner": "right", "winnerAt": "ownership", "loserMark": "cross"}},
+    {"text": "*Ownership* pays you for the *value you create.*", "visual": "keep"},
+    {"text": "Stop only earning. *Start owning.*",
+     "visual": {"type": "icon", "icon": "Key", "burst": true}},
+    {"text": "Follow for more billionaire money lessons.",
+     "visual": {"type": "outro"}}
+  ]
+}

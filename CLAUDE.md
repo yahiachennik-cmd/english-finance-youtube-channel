@@ -23,7 +23,8 @@ How billionaires and top business people **think about and make money**
 ## Workflow
 1. Scripts written in English (Claude drafts).
 2. The owner records and sends the voiceover audio.
-3. Editing is done by the project's editing skill (ffmpeg + Whisper word-level captions).
+3. Editing: skill `money-shorts-editor` (`.claude/skills/money-shorts-editor/SKILL.md`) — Remotion
+   motion graphics in `video/`, word-synced captions, navy + gold house style.
 
 ## Rules
 - The owner writes in Algerian Arabic (Darija) — reply in Arabic. All channel content is English.
@@ -34,5 +35,5 @@ How billionaires and top business people **think about and make money**
 
 ## Layout
 - `docs/` — strategy, roadmap, specs
-- `scripts/` — video scripts, one file per video (create when production starts)
+- `video/` — Remotion project; one folder per Short in `video/projects/<id>/` (script.json + voice)
 - `.claude/skills/` — project skills (editing skill goes here)
