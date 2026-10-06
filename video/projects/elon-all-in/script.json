@@ -1,0 +1,262 @@
+{
+ "title": "Elon Musk Made $180 Million… Then Bet All of It",
+ "sources": [
+  {
+   "id": "cbs2014",
+   "title": "CBS News (60 Minutes) — 'Billionaire Elon Musk on 2008: The worst year of my life': all of his money, including the $180 million he made from the sale of PayPal, was invested in both companies",
+   "url": "https://www.cbsnews.com/news/billionaire-elon-musk-on-2008-the-worst-year-of-my-life/"
+  },
+  {
+   "id": "compaq1999",
+   "title": "Compaq Computer Corp. Form 10-Q (1999) — acquisition of Zip2 for cash (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000714154/000071415499000013/0000714154-99-000013.txt"
+  },
+  {
+   "id": "britannica",
+   "title": "Encyclopaedia Britannica — Zip2: Compaq paid $307 million in cash (1999); Musk received $22 million for his 7% stake and used $12 million to co-found X.com, which became PayPal",
+   "url": "https://www.britannica.com/money/zip2"
+  },
+  {
+   "id": "paypal8k",
+   "title": "PayPal Inc. Form 8-K (July 2002) — eBay to acquire PayPal in a stock deal valued at $1.5 billion (SEC)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001103415/000091205702037693/a2090698zex-99_1.htm"
+  },
+  {
+   "id": "cnbc2020",
+   "title": "CNBC (Oct 2, 2020) — Musk: he thought there was a 'greater than 90% chance' both SpaceX and Tesla would be worth $0",
+   "url": "https://www.cnbc.com/2020/10/02/elon-musk-there-was-a-great-chance-spacex-tesla-would-be-worth-0.html"
+  }
+ ],
+ "scenes": [
+  {
+   "text": "Elon Musk made *$180 million*... and bet *all of it.*",
+   "source": [
+    "cbs2014"
+   ],
+   "visual": {
+    "type": "counter",
+    "from": 0,
+    "to": 180,
+    "prefix": "$",
+    "suffix": "M",
+    "dur": 1.3,
+    "label": "PayPal payout",
+    "labelIcon": "Banknote",
+    "burst": true
+   }
+  },
+  {
+   "text": "Most people would retire. *He went all in.*",
+   "opinion": true,
+   "visual": {
+    "type": "compare",
+    "flash": true,
+    "left": {
+     "title": "Retire",
+     "icon": "Palmtree",
+     "sub": "Safe and done"
+    },
+    "right": {
+     "title": "All in",
+     "icon": "Rocket",
+     "sub": "Risk it all",
+     "at": "all"
+    },
+    "winner": "right",
+    "winnerAt": "all"
+   }
+  },
+  {
+   "text": "In 1999, Compaq bought his first startup, Zip2, for *$307 million.*",
+   "source": [
+    "compaq1999",
+    "britannica"
+   ],
+   "visual": {
+    "type": "counter",
+    "from": 0,
+    "to": 307,
+    "prefix": "$",
+    "suffix": "M",
+    "dur": 1.1,
+    "label": "Zip2 sale, 1999",
+    "labelIcon": "Building2"
+   }
+  },
+  {
+   "text": "His cut? About *$22 million.*",
+   "source": [
+    "britannica"
+   ],
+   "visual": {
+    "type": "counter",
+    "from": 307,
+    "to": 22,
+    "prefix": "$",
+    "suffix": "M",
+    "dur": 0.9,
+    "label": "Elon's 7% stake",
+    "labelIcon": "PieChart"
+   }
+  },
+  {
+   "text": "He put *$12 million* of it into his next startup.",
+   "source": [
+    "britannica"
+   ],
+   "visual": {
+    "type": "bars",
+    "prefix": "$",
+    "suffix": "M",
+    "bars": [
+     {
+      "label": "Zip2 payout",
+      "value": 22,
+      "display": "$22M"
+     },
+     {
+      "label": "Into X.com",
+      "value": 12,
+      "display": "$12M",
+      "at": "12"
+     }
+    ]
+   }
+  },
+  {
+   "text": "*X.com.* Which became *PayPal.*",
+   "source": [
+    "britannica"
+   ],
+   "visual": {
+    "type": "timeline",
+    "events": [
+     {
+      "year": "1999",
+      "text": "X.com",
+      "at": "x"
+     },
+     {
+      "year": "2000",
+      "text": "PayPal",
+      "at": "paypal"
+     }
+    ]
+   }
+  },
+  {
+   "text": "In 2002, eBay bought PayPal for *$1.5 billion.*",
+   "source": [
+    "paypal8k"
+   ],
+   "visual": {
+    "type": "bars",
+    "prefix": "$",
+    "bars": [
+     {
+      "label": "Zip2, 1999",
+      "value": 0.307,
+      "display": "$307M"
+     },
+     {
+      "label": "PayPal, 2002",
+      "value": 1.5,
+      "display": "$1.5B",
+      "at": "15"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Elon's share? About *$180 million.*",
+   "source": [
+    "cbs2014"
+   ],
+   "visual": "keep"
+  },
+  {
+   "text": "And he poured it into *Tesla* and *SpaceX.*",
+   "source": [
+    "cbs2014"
+   ],
+   "visual": {
+    "type": "list",
+    "items": [
+     {
+      "text": "Tesla",
+      "icon": "Car",
+      "at": "tesla"
+     },
+     {
+      "text": "SpaceX",
+      "icon": "Rocket",
+      "at": "spacex"
+     }
+    ]
+   }
+  },
+  {
+   "text": "He later said he saw a *90% chance* both would hit *zero.*",
+   "source": [
+    "cnbc2020"
+   ],
+   "visual": {
+    "type": "counter",
+    "from": 0,
+    "to": 90,
+    "suffix": "%",
+    "color": "red",
+    "dur": 1.0,
+    "label": "Chance of $0",
+    "labelIcon": "TriangleAlert",
+    "flash": true
+   }
+  },
+  {
+   "text": "Here's the lesson. Your first win isn't the finish line. It's *fuel.*",
+   "opinion": true,
+   "visual": {
+    "type": "icon",
+    "icon": "Flag",
+    "burst": true
+   }
+  },
+  {
+   "text": "Just never bet money you *can't afford to lose.*",
+   "opinion": true,
+   "visual": {
+    "type": "icon",
+    "icon": "ShieldAlert"
+   }
+  },
+  {
+   "text": "Would you go all in, or *cash out?* Tell me below.",
+   "opinion": true,
+   "visual": {
+    "type": "cta",
+    "actions": [
+     {
+      "icon": "MessageCircle",
+      "text": "Comment"
+     },
+     {
+      "icon": "Send",
+      "text": "Share",
+      "at": "send"
+     }
+    ]
+   }
+  },
+  {
+   "text": "And *send this* to a friend who's scared to take a shot.",
+   "opinion": true,
+   "visual": "keep"
+  },
+  {
+   "text": "Follow for more billionaire money lessons.",
+   "visual": {
+    "type": "outro"
+   }
+  }
+ ]
+}
