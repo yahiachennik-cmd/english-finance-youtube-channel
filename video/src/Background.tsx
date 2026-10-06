@@ -119,7 +119,7 @@ const Market: React.FC<{frame: number}> = ({frame}) => {
   );
 };
 
-export const Background: React.FC<{burst: number; variant?: BgVariant}> = ({burst, variant = 'navy'}) => {
+export const Background: React.FC<{burst: number; variant?: BgVariant}> = ({burst, variant = 'royal'}) => {
   const frame = useCurrentFrame();
   return (
     <AbsoluteFill style={{background: BASE[variant] ?? BASE.navy}}>

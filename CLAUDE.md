@@ -24,7 +24,7 @@ How billionaires and top business people **think about and make money**
 1. Scripts written in English (Claude drafts).
 2. The owner records and sends the voiceover audio.
 3. Editing: skill `money-shorts-editor` (`.claude/skills/money-shorts-editor/SKILL.md`) — Remotion
-   motion graphics in `video/`, word-synced captions, navy + gold house style.
+   motion graphics in `video/`, word-synced captions, royal blue + gold house style.
 
 ## Rules
 - The owner writes in Algerian Arabic (Darija) — reply in Arabic. All channel content is English.

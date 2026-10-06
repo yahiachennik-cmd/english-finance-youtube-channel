@@ -25,8 +25,9 @@ export const glassGold: React.CSSProperties = {
 };
 
 export const glassDark: React.CSSProperties = {
-  background: 'linear-gradient(180deg, rgba(22,38,74,0.85), rgba(10,20,44,0.9))',
-  border: '2px solid rgba(245,183,49,0.45)',
-  boxShadow: '0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(245,183,49,0.08)',
+  background: 'linear-gradient(180deg, rgba(18,52,150,0.55), rgba(8,26,90,0.7))',
+  backdropFilter: 'blur(14px)',
+  border: '2px solid rgba(245,183,49,0.5)',
+  boxShadow: '0 20px 60px rgba(3,10,40,0.45), inset 0 1px 0 rgba(255,255,255,0.18)',
   borderRadius: 30,
 };

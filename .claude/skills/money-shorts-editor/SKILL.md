@@ -1,6 +1,6 @@
 ---
 name: money-shorts-editor
-description: Edit a vertical YouTube Short for the English business & money channel in the house motion-graphics style (navy + gold, word-by-word captions, animated icons/counters/charts/cards, branded outro). Use whenever the user sends a voiceover to turn into a Short, asks to "edit / montage / render" a video, wants a style test, or wants to add a new visual type. Built on Remotion in `video/`.
+description: Edit a vertical YouTube Short for the English business & money channel in the house motion-graphics style (royal blue + gold, word-by-word captions, animated icons/counters/charts/cards, branded outro). Use whenever the user sends a voiceover to turn into a Short, asks to "edit / montage / render" a video, wants a style test, or wants to add a new visual type. Built on Remotion in `video/`.
 ---
 
 # Money Shorts Editor
@@ -11,8 +11,11 @@ channel «الأول», adapted to English and to money/billionaire topics. Refe
 `docs/old-style-analysis.md`.
 
 ## The style (do not drift from it)
-- **Background:** dark navy gradient, faint grid, drifting gold particles, gold glow bottom-right,
-  optional rotating sunburst rays (`burst: true`) for hook/climax/outro.
+- **Background — "Royal" (approved by the owner, channel default):** royal-blue radial gradient
+  (#2a63e0 → #061447), soft light orbs drifting slowly, faint grid, drifting gold particles, gold glow
+  bottom-right, optional rotating sunburst rays (`burst: true`) for hook/climax/outro.
+  Deliberately bluer than «الأول»'s navy so the two channels don't look alike. Other variants exist
+  for experiments only (`--bg aurora|market|navy`); don't use them in published videos unless the owner asks.
 - **Caption:** top of screen (~y=210), Montserrat Black 76px, built **word by word in sync with the
   voice**; key words wrapped in `*...*` render **gold with glow**. One short sentence per scene (≤ 8 words ideal).
 - **Centre visual:** one idea per scene — gold icon badge, counter, line chart, bars, gold glass list
@@ -26,7 +29,7 @@ channel «الأول», adapted to English and to money/billionaire topics. Refe
 ## Files
 ```
 video/
-  brand.json                 channel name, handle, tagline, CTA (placeholder: MONEY MINDS)
+  brand.json                 channel name, handle, tagline, CTA, background (placeholder: MONEY MINDS)
   projects/<id>/script.json  the scenes (authoring format below)
   projects/<id>/voice.*      owner's voiceover (wav/mp3/m4a/ogg/...)
   tools/make_short.py        pipeline: voice clean-up → word timings → props → render

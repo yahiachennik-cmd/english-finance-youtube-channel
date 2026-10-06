@@ -8,6 +8,7 @@
 - [x] السكيل القديم ما تسجّلش أبداً → تحليل 3 فيديوهات من «الأول» ([`old-style-analysis.md`](old-style-analysis.md))
 - [x] بناء السكيل من الصفر: `money-shorts-editor` (Remotion، `video/`)
 - [x] فيديو تجريبي 1: `elon-zero-salary` (بصوت روبو مؤقت)
+- [x] الخلفية: **Royal** (أزرق ملكي + ذهبي) — معتمدة كأسلوب القناة
 - [ ] فويس حقيقي من يحيى للفيديو التجريبي
 - [ ] اسم القناة واللوغو (`video/brand.json` — مؤقتاً MONEY MINDS)
 - [ ] مزيكا حقيقية بلا حقوق في `video/public/music/`
